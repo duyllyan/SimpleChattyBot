@@ -1,0 +1,17 @@
+fun main() {
+    val n = readln().toInt()
+    var larger = 0
+    var smaller = 0
+    var perfect = 0
+
+    repeat(n) {
+        val next = readln().toInt()
+        when (next) {
+            -1 -> smaller++
+            0 -> perfect++
+            1 -> larger++
+        }
+    }
+
+    println("$perfect $larger $smaller")
+}
